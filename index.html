@@ -1,18 +1,232 @@
-<!doctype html>
-<title>Site Maintenance</title>
-<style>
-  body { text-align: center; padding: 150px; }
-  h1 { font-size: 50px; }
-  body { font: 20px Helvetica, sans-serif; color: #333; }
-  article { display: block; text-align: left; width: 650px; margin: 0 auto; }
-  a { color: #dc8100; text-decoration: none; }
-  a:hover { color: #333; text-decoration: none; }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>J & Y Chinese Cuisine</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<!-- <img src="img/jnysrc/logo-white.jpg" width="200" height="200"> -->
+		<a href="#" class="logo">怡景轩<span>.</span></a>
+		<div class="menuToggle" onclick="toggleMenu()"></div>
+		<ul class="navigation">
+			<li><a href="#" onclick="toggleMenu()">Home</a></li>
+			<li><a href="#about" onclick="toggleMenu()">About</a></li>
+			<li><a href="#menu" onclick="toggleMenu()">Menu</a></li>
+<!-- 			<li><a href="#expert" onclick="toggleMenu()">Expert</a></li>
+			<li><a href="#testimonials" onclick="toggleMenu()">Testimonials</a></li> -->
+			<li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+		</ul>
+	</header>
+	<section class="banner" id="banner">
+		<div class="content">
+			<h2 style="font-family: 'KaiTi', '楷体', serif;">怡景轩</h2>
+			<p>
+				J & Y Chinese Cuisine
+			</p>
+			<p>
+				Moday, Tuesday, Thursday: 4:00PM - 11:00PM
+			</p>
+			<p>
+				Friday, Saturday, sunday: 11:30AM - 11:00PM
+			</p>
+			<p>
+				Contact Number: <a href="tel:4162235151">416-223-5151</a>
+			</p>
+			<a href="#menu" class="btn">菜单 Our Menu</a>
+			<p>
+				Prices are subject to change without notice
+			</p>
+		</div>
+	</section>
 
-<article>
-    <h1>We&rsquo;ll be back soon!</h1>
-    <div>
-        <p>Sorry for the inconvenience but we&rsquo;re performing some maintenance at the moment. If you need to you can always contact us at: 416-223-5151, otherwise we&rsquo;ll be back online shortly!</p>
-        <p>非常抱歉，网站目前正在更新中。如有需要，请联系：416-223-5151</p>
-    </div>
-</article>
+	<section class="about" id="about">
+		<div class="row">
+			<div class="col80">
+				<h2 class="titleText"><span>J</span> & <span>Y</span> Chinese Cuisine</h2>
+				<p>
+					Eating behavior plays a very important role in Chinese culture. "Book of Han" says, "The king regards the people as his heaven, and the people regard food as their heaven." The "Eight Policies of Hong Fan" in "Book of Zhou" puts "food" in the first place. The importance of "food" in Chinese culture can be seen. In China, food and drink have the same meaning as running a family, governing a country, and other major social affairs.
+					<br><br>
+					Scholar Zhang Guangzhi believes that “one of the best ways to reach the core of a culture is through its belly.” In Chinese culture, we can understand a national spirit through dietary behavior. One of the common greetings when Chinese people meet is "Have you eaten?" After a person is born, he first understands and grasps the world through "eating".
+				</p>
+			</div>
+
+			<div class="col20">
+				<div class="imgBx">
+					<img src="img/jnysrc/test.jpg" alt="" >
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="menu" id="menu">
+		<div class="title">
+			<h2 class="titleText"><span>菜</span>单</h2>
+		</div>
+
+		<div class="content">
+<!-- 			<div class="box">
+				<a href="waimai-slideshow.html" target="_blank">
+				<div class="imgBx">
+					<img src="img/waimai-logo-2.jpg" alt="">
+				</div>
+				<div class="text">
+					<h3>外卖 Take Out</h3>
+				</div>
+				</a>
+			</div> -->
+
+			<div class="box">
+				<a href="chef-slideshow.html" target="_blank">
+				<div class="imgBx">
+					<img src="img/kaoya-logo.jpg" alt="">
+				</div>
+				<div class="text">
+					<h3>厨师推荐 Chef Recommendation</h3>
+				</div>
+				</a>
+			</div>
+
+			<div class="box">
+				<a href="img/jnysrc/duntang.JPG" target="_blank">
+				<div class="imgBx">
+					<img src="img/duntang-log.jpg" alt="">
+				</div>
+				<div class="text">
+					<h3>燉汤 Stewed</h3>
+				</div>
+				</a>
+			</div>			
+			
+			<div class="box">
+				<a href="img/jnysrc/tanggenxiaoshi.JPG" target="_blank">
+				<div class="imgBx">
+					<img src="img/tanggen-logo.jpg" alt="">
+				</div>
+				<div class="text">
+					<h3>汤羹小食 Soup and Appetizer</h3>
+				</div>
+				</a>
+			</div>
+
+			<div class="box">
+				<a href="img/jnysrc/haixian.JPG" target="_blank">
+				<div class="imgBx">
+					<img src="img/haixian-logo.jpg" alt="">
+				</div>
+				<div class="text">
+					<h3>海鲜 Seafood</h3>
+				</div>
+				</a>
+			</div>
+
+			<div class="box">
+				<a href="img/jnysrc/jirou.JPG" target="_blank">
+				<div class="imgBx">
+					<img src="img/jirou-logo.jpg" alt="">
+				</div>
+				<div class="text">
+					<h3>鸡肉 Chicken</h3>
+				</div>
+				</a>
+			</div>
+
+			<div class="box">
+				<a href="img/jnysrc/zhurou.JPG" target="_blank">
+				<div class="imgBx">
+					<img src="img/zhurou-logo.jpg" alt="">
+				</div>
+				<div class="text">
+					<h3>猪肉 Pork</h3>
+				</div>
+				</a>
+			</div>
+
+			<div class="box">
+				<a href="img/jnysrc/niurou.JPG" target="_blank">
+				<div class="imgBx">
+					<img src="img/niurou-logo.jpg" alt="">
+				</div>
+				<div class="text">
+					<h3>牛肉 Beef</h3>
+				</div>
+				</a>
+			</div>
+
+			<div class="box">
+				<a href="img/jnysrc/shucai.JPG" target="_blank">
+				<div class="imgBx">
+					<img src="img/shucai-logo.jpg" alt="">
+				</div>
+				<div class="text">
+					<h3>蔬菜 Vegetable</h3>
+				</div>
+				</a>
+			</div>
+
+			<div class="box">
+				<a href="zhushi-slideshow.html" target="_blank">
+				<div class="imgBx">
+					<img src="img/zhushi-logo.jpg" alt="">
+				</div>
+				<div class="text">
+					<h3>主食 Rice and Noodles</h3>
+				</div>
+				</a>
+			</div>
+
+		</div>
+
+		<div class="title">
+			<a href="waimai-slideshow.html" class="btn">外卖菜单 Take Out Menu</a>
+		</div>
+
+	</section>
+
+	<section class="contact" id="contact">
+		<div class="title">
+			<h2 class="titleText"><span>联</span>系我们</h2>
+			<p>Please call us at: <a href="tel:4162235151">416-223-5151</a></p>
+
+			<p>Address: 1108 Sheppard Ave E, North York, ON M2K 2V9</p>
+		</div>
+<!-- 		<div class="contactForm">
+			<h3>Send Message</h3>
+			<div class="inputBox">
+				<input type="text" placeholder="Name" required>
+			</div>
+			<div class="inputBox">
+				<input type="email" placeholder="Email" required>
+			</div>
+			<div class="inputBox">
+				<textarea placeholder="Message line..." required></textarea>
+			</div>			
+			<div class="inputBox">
+				<input type="submit" value="Send">
+			</div>
+		</div> -->
+	</section>
+
+
+	<div class="copyrightText">
+		<p>Copyright 2025 <a href="#">J & Y Chinese Cuisine</a>. All Rights Reserved.</p>
+	</div>
+
+	<script type="text/javascript">
+		window.addEventListener('scroll', function(){
+			const header = document.querySelector('header');
+			header.classList.toggle("sticky", window.scrollY > 0);
+		});
+
+		function toggleMenu()
+		{
+			const menuToggle = document.querySelector('.menuToggle');
+			const navigation = document.querySelector('.navigation');
+			menuToggle.classList.toggle('active');
+			navigation.classList.toggle('active');
+		}
+	</script>
+</body>
+</html>
